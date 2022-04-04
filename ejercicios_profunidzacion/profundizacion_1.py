@@ -24,18 +24,29 @@ Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 sino que va hasta el anterior.
 '''
 
+from email import message_from_string
+
+
 print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
 
-# inicio = ....
-# fin = ....
+inicio = int(input("Ingresar primer numero "))
+fin = int(input("Ingresar segundo numero "))
+fin_real = fin + 1 
 
-# cantidad_numeros ....
-# sumatoria ....
+cantidad_numeros = 0
+sumatoria = 0
 
-# bucle.....
+for i in range(inicio, fin_real):
+    cantidad_numeros += 1
+    sumatoria = sumatoria + i
+
+print(cantidad_numeros)
+print(sumatoria)
 
 # Al terminar el bucle calcular el promedio como:
 # promedio = sumatoria / cantidad_numeros
+promedio = sumatoria / cantidad_numeros
 
 # Imprimir resultado en pantalla
+print(promedio)
